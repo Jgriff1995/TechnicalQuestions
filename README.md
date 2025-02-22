@@ -11,7 +11,7 @@ This repository is a collection of various interview questions, all implemented 
   - [🛠️ Usage](#️-usage)
   - [📂 Folder Structure](#-folder-structure)
   - [🤝 Contributions](#-contributions)
-  - [☕ **runJava.sh** - Bash Script to Compile and Run Java Programs](#-runjavash---bash-script-to-compile-and-run-java-programs)
+  - [☕ **runJava.sh/createJavaProject.sh** - Bash Scripts to create,compile, and run Java programs](#-runjavashcreatejavaprojectsh---bash-scripts-to-createcompile-and-run-java-programs)
     - [**Usage**](#usage)
     - [**Requirements**](#requirements)
     - [**How to make the Script Global**](#how-to-make-the-script-global)
@@ -81,9 +81,14 @@ Contributions are welcome! If you'd like to add more problems, improve existing 
 5. **Open a pull request**.
 
 
-## ☕ **runJava.sh** - Bash Script to Compile and Run Java Programs
+## ☕ **runJava.sh/createJavaProject.sh** - Bash Scripts to create,compile, and run Java programs
+
+runJava.sh:
 
 This script automates the process of compiling and running Java programs. It handles packages and works from any directory. By default, the script is stored in a `runJava.txt` file. Simply change the file extension from `.txt` to `.sh` to use it. The script can be run either globally or from the root folder.
+
+createJavaProject.sh
+This Bash script (createJavaProject.sh) automates the creation of new Java projects for solving technical questions. It sets up a folder, generates a Java file with a template, and creates an empty expectedOutput.txt file.
 
 ---
 
@@ -92,10 +97,32 @@ This script automates the process of compiling and running Java programs. It han
 runJava <JavaFileName>
 ```
 
+```bash
+/createJavaProject.sh
+```
+
 **Example**
 ```bash
 runJava JumpGame
 ```
+```bash
+Enter the name of the folder (e.g., GameOfLife): folderName
+```
+
+**Output**
+```bash
+Compiling GameOfLifeSolution.java...
+Compilation successful!
+Running GameOfLife.GameOfLifeSolution...
+```
+
+```bash
+Project created successfully!
+Folder: /c/Users/your_name/some_directory/TechnicalQuestions/folderName
+Java File: /c/Users/your_name/some_directory/TechnicalQuestions/folderName/folderNameSolution.java
+Expected Output File: /c/Users/your_name/some_directory/TechnicalQuestions/folderName/expectedOutput.txt
+```
+
 
 ---
 
@@ -106,15 +133,15 @@ Java Development Kit (JDK): Ensure javac and java are installed and accessible i
 ---
 
 ### **How to make the Script Global**
-Move the script to a directory in your PATH, such as ~/bin or /usr/local/bin:
+Move the script to a directory in your PATH, such as ~/bin or /usr/local/bin (replace insert_script with script Name):
 
 ```bash
-mv runJava.sh /usr/local/bin/runJava
+mv insert_script.sh /usr/local/bin/insert_script
 Make the script executable:
 ```
 
 ```bash
-chmod +x /usr/local/bin/runJava
+chmod +x /usr/local/bin/insert_script
 Ensure the directory is in your PATH:
 ```
 
@@ -126,11 +153,11 @@ export PATH=$PATH:/usr/local/bin
 
 ### **Notes**
 
-The script assumes the Java file is located in the current directory or its subdirectories.
-
+The run script assumes the Java file is located in the current directory or its subdirectories.
 If the Java file is part of a package, the script will create the necessary directory structure and run the program with the fully qualified class name.
-
 The .gitignore file will ignore the directory nested inside /Problem_Name/target/problemSolution.class. Class files are not uploaded.
+
+The run script assumes you are currently in the Root Folder /TechnicalQuestions
 
 ---
 

@@ -56,6 +56,9 @@ public class Knapsack {
         return Math.max(includeValue, excludeValue); // Choose the maximum value
     }
 
+    /*
+     * Main method to demonstrate the functionality of the Knapsack class.
+     */
     public static void main(String[] args) {
         // Small dataset
         int smallValues[] = new int[] { 70, 20, 39, 37, 7, 5, 10 };

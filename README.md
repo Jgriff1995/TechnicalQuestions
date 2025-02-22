@@ -37,12 +37,11 @@ This repository is a collection of various interview questions, all implemented 
 interview-questions/
 ├── rainwater-trapping/
 │   ├── Solution.java
-│   ├── expectedOutput.txt
-│   └── README.md
+│   └── expectedOutput.txt
+│   
 ├── knapsack-problem/
 │   ├── Solution.java
-│   ├── expectedOutput.txt
-│   └── README.md
+│   └── expectedOutput.txt
 └── ...
 ```
 ## 🤝 Contributions

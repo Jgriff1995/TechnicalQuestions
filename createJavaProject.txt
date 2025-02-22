@@ -1,7 +1,7 @@
 #Script for making creating project folders, java Files and empty expectedOutput Files easier and more concise.
 #run ./createJavaProject.sh after you have made this into a bash script file & given it proper permissions
 #the script will prompt you to Enter a name of the folder: nameEnteredHere
-#Makes Folder, nested java file and nested expected output!
+#Makes Folder, nested java file and nested expected output
 
 #!/bin/bash
 

@@ -1,6 +1,15 @@
 package Knapsack;
 
-public class Knapsack {
+/* Date: 2/21/2025
+ * Problem Name: Knapsack Problem
+ * Problem description: Given a set of items, each with a weight and a value, determine the maximum value 
+ *                     that can be obtained by selecting a subset of the items without exceeding a given 
+ *                     weight limit.
+ * Author: @JGriff1995
+ * Link: N/A - codeacademy
+ */
+
+public class KnapsackSolution {
 
     /*
      * Dynamic Programming Solution for the Knapsack Problem.

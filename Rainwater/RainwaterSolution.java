@@ -1,6 +1,14 @@
 package Rainwater;
 
-public class Rainwater {
+/* Date: 2/21/2025
+ * Problem Name: Rainwater Trapping
+ * Problem description: Given an array representing the height of bars, calculate how much rainwater 
+ *                     can be trapped between the bars after raining.
+ * Author: @Jgriff1995
+ * Link: N/A - codeacademy
+ */
+
+public class RainwaterSolution {
 
     /*
      * Naive solution to calculate trapped rainwater.

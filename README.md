@@ -64,7 +64,61 @@ Contributions are welcome! If you'd like to add more problems, improve existing 
    ```
 5. **Open a pull request**.
 
+
+## **runJava.sh** - Bash Script to Compile and Run Java Programs
+
+This script automates the process of compiling and running Java programs. It handles packages and works from any directory. By default, the script is stored in a `runJava.txt` file. Simply change the file extension from `.txt` to `.sh` to use it. The script can be run either globally or from the root folder.
+
+---
+
+### **Usage**
+```bash
+runJava <JavaFileName>
+```
+
+**Example**
+```bash
+runJava JumpGame
+```
+
+---
+
+## **Requirements**
+
+Java Development Kit (JDK): Ensure javac and java are installed and accessible in your PATH.
+
+---
+
+## **How to make the Script Global**
+Move the script to a directory in your PATH, such as ~/bin or /usr/local/bin:
+
+```bash
+mv runJava.sh /usr/local/bin/runJava
+Make the script executable:
+```
+
+```bash
+chmod +x /usr/local/bin/runJava
+Ensure the directory is in your PATH:
+```
+
+```bash
+export PATH=$PATH:/usr/local/bin
+```
+
+---
+
+## **Notes**
+
+The script assumes the Java file is located in the current directory or its subdirectories.
+
+If the Java file is part of a package, the script will create the necessary directory structure and run the program with the fully qualified class name.
+
+---
+
 ## 🙏 Acknowledgments
 
 - Thanks to the open-source community for inspiration and resources.
 - Special thanks to [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/) for providing great problem sets.
+
+---

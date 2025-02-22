@@ -1,2 +1,4 @@
+# ignore all class files
 **/*.class
-template.txt
+# Ignore all target directories
+**/target/

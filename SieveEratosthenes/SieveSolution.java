@@ -2,7 +2,15 @@ package SieveEratosthenes;
 
 import java.util.ArrayList;
 
-public class Sieve {
+/* Date: 2/21/2025
+ * Problem Name: Sieve of Eratosthenes
+ * Problem description: Given a number n, find all prime numbers up to n using the Sieve of Eratosthenes 
+ *                     algorithm, which efficiently marks non-prime numbers in a boolean array.
+ * Author: @Jgriff1995
+ * Link: N/A - codeacademy
+ */
+
+public class SieveSolution {
 
     /*
      * Sieve of Eratosthenes algorithm to find all prime numbers up to a given

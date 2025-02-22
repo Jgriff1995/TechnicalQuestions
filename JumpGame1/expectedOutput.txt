@@ -1,0 +1,11 @@
+Input 1: [2, 3, 1, 1, 4]
+Can reach the last index? true
+Time Complexity: O(n), Space Complexity: O(1)
+
+Input 2: [3, 2, 1, 0, 4]
+Can reach the last index? false
+Time Complexity: O(n), Space Complexity: O(1)
+
+Input 3: [0]
+Can reach the last index? true
+Time Complexity: O(n), Space Complexity: O(1)

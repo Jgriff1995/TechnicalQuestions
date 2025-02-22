@@ -21,12 +21,12 @@ This repository is a collection of various interview questions, all implemented 
 
 2. **Navigate to the specific problem folder**:
    ```bash
-   cd your-repo-name/problem-folder
+   cd TechnicalQuestions/problem_folder
    ```
 3. **Run Java code**:
    ```bash
-   javac insert_solution.java
-   java insert_solution
+   javac insert_solution_name.java
+   java insert_solution_name
    ``` 
 
 4. **Compare the output with the provided expectedOutput.txt to verify correctness.**

@@ -4,7 +4,7 @@ package JumpGame1;
  * Problem Name: 
  * Problem description: 
  * Author: @insert_name 
- * Link: (Insert link to problem if pulled from leetcode/hackerrank/etc.)
+ * Link: https://leetcode.com/problems/jump-game/description/
  */
 
 public class JumpGameSolution {

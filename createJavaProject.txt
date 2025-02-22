@@ -1,0 +1,84 @@
+#Script for making creating project folders, java Files and empty expectedOutput Files easier and more concise.
+#run ./createJavaProject.sh after you have made this into a bash script file & given it proper permissions
+#the script will prompt you to Enter a name of the folder: nameEnteredHere
+#Makes Folder, nested java file and nested expected output!
+
+#!/bin/bash
+
+# Define the base directory (Windows path)
+BASE_DIR="/c/Users/your_name_on_windows/(insert desktop/documents etc. where techquestions is held)/TechnicalQuestions"
+
+# Prompt the user for the folder name
+read -p "Enter the name of the folder (e.g., GameOfLife): " FOLDER_NAME
+
+# Create the full path for the new folder
+FOLDER_PATH="$BASE_DIR/$FOLDER_NAME"
+
+# Create the folder
+mkdir -p "$FOLDER_PATH"
+
+# Check if the folder was created successfully
+if [ ! -d "$FOLDER_PATH" ]; then
+    echo "Error: Failed to create folder $FOLDER_PATH."
+    exit 1
+fi
+
+# Define the Java file name
+JAVA_FILE_NAME="${FOLDER_NAME}Solution.java"
+JAVA_FILE_PATH="$FOLDER_PATH/$JAVA_FILE_NAME"
+
+# Create the Java file with the template
+cat <<EOF > "$JAVA_FILE_PATH"
+package $FOLDER_NAME;
+
+/* Date: $(date +%Y-%m-%d)
+ * Problem Name: 
+ * Problem description: 
+ * Author: @insert_name 
+ * Link: (Insert link to problem if pulled from leetcode/hackerrank/etc.)
+ */
+
+public class ${FOLDER_NAME}Solution {
+
+    /*
+     * 1 solution 
+     * Time Complexity: O(), Space Complexity: O()
+     */
+
+    /*
+     * 2 solution 
+     * Time Complexity: O(), Space Complexity: O()
+     */
+
+    //... to n solutions 
+
+    /*
+     * Main method to demonstrate the functionality of the class.
+     */
+    public static void main(String[] args) {
+
+    }
+}
+EOF
+
+# Check if the Java file was created successfully
+if [ ! -f "$JAVA_FILE_PATH" ]; then
+    echo "Error: Failed to create Java file $JAVA_FILE_PATH."
+    exit 1
+fi
+
+# Create an empty expectedOutput.txt file
+EXPECTED_OUTPUT_FILE="$FOLDER_PATH/expectedOutput.txt"
+touch "$EXPECTED_OUTPUT_FILE"
+
+# Check if the expectedOutput.txt file was created successfully
+if [ ! -f "$EXPECTED_OUTPUT_FILE" ]; then
+    echo "Error: Failed to create expectedOutput.txt."
+    exit 1
+fi
+
+# Print success message
+echo "Project created successfully!"
+echo "Folder: $FOLDER_PATH"
+echo "Java File: $JAVA_FILE_PATH"
+echo "Expected Output File: $EXPECTED_OUTPUT_FILE"

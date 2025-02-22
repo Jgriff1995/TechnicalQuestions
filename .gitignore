@@ -2,3 +2,5 @@
 **/*.class
 # Ignore all target directories
 **/target/
+# Ignore all bash files
+*.sh

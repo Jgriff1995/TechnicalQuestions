@@ -4,6 +4,22 @@ This repository is a collection of various interview questions, all implemented 
 
 ---
 
+### 🔗 Navigation
+- [📂 Interview Questions Repository](#-interview-questions-repository)
+    - [🔗 Navigation](#-navigation)
+  - [🚀 Features](#-features)
+  - [🛠️ Usage](#️-usage)
+  - [📂 Folder Structure](#-folder-structure)
+  - [🤝 Contributions](#-contributions)
+  - [☕ **runJava.sh** - Bash Script to Compile and Run Java Programs](#-runjavash---bash-script-to-compile-and-run-java-programs)
+    - [**Usage**](#usage)
+  - [**Requirements**](#requirements)
+  - [**How to make the Script Global**](#how-to-make-the-script-global)
+  - [**Notes**](#notes)
+  - [🙏 Acknowledgments](#-acknowledgments)
+
+---
+
 ## 🚀 Features
 
 - **Java Implementation**: All solutions are written in Java, ensuring clarity and readability.

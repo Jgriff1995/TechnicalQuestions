@@ -68,14 +68,3 @@ Contributions are welcome! If you'd like to add more problems, improve existing 
 
 - Thanks to the open-source community for inspiration and resources.
 - Special thanks to [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/) for providing great problem sets.
-
-  
-
-
-
-   
-<<<<<<< HEAD
-   
-=======
-   
->>>>>>> 7834e9b6bee01e325a8d5c493f337b240936d9f8

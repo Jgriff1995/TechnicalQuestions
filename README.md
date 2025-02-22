@@ -13,9 +13,9 @@ This repository is a collection of various interview questions, all implemented 
   - [🤝 Contributions](#-contributions)
   - [☕ **runJava.sh** - Bash Script to Compile and Run Java Programs](#-runjavash---bash-script-to-compile-and-run-java-programs)
     - [**Usage**](#usage)
-  - [**Requirements**](#requirements)
-  - [**How to make the Script Global**](#how-to-make-the-script-global)
-  - [**Notes**](#notes)
+    - [**Requirements**](#requirements)
+    - [**How to make the Script Global**](#how-to-make-the-script-global)
+    - [**Notes**](#notes)
   - [🙏 Acknowledgments](#-acknowledgments)
 
 ---
@@ -99,13 +99,13 @@ runJava JumpGame
 
 ---
 
-## **Requirements**
+### **Requirements**
 
 Java Development Kit (JDK): Ensure javac and java are installed and accessible in your PATH.
 
 ---
 
-## **How to make the Script Global**
+### **How to make the Script Global**
 Move the script to a directory in your PATH, such as ~/bin or /usr/local/bin:
 
 ```bash
@@ -124,7 +124,7 @@ export PATH=$PATH:/usr/local/bin
 
 ---
 
-## **Notes**
+### **Notes**
 
 The script assumes the Java file is located in the current directory or its subdirectories.
 
@@ -134,7 +134,7 @@ If the Java file is part of a package, the script will create the necessary dire
 
 ## 🙏 Acknowledgments
 
-- Thanks to the open-source community for inspiration and resources.
+- Thanks to the open-source community for inspiration and resources!
 - Special thanks to [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/) for providing great problem sets.
 
 ---

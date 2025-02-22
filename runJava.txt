@@ -1,7 +1,3 @@
-#If you know how to use bash, feel free to use this script, allows for easier compiling/running when in the root folder.
-#This runJava.sh File should go into a global directory.
-
-
 #!/bin/bash
 
 # Check if a file name is provided as an argument
@@ -31,31 +27,26 @@ JAVA_DIR=$(dirname "$JAVA_FILE_PATH")
 # Extract the package name (if any)
 PACKAGE_NAME=$(grep -oP 'package\s+\K[\w.]+' "$JAVA_FILE_PATH")
 
+# Define the output directory for .class files
+TARGET_DIR="$JAVA_DIR/target"
+
 # Compile the Java file
 echo "Compiling $JAVA_FILE..."
-javac "$JAVA_FILE_PATH"
+javac -d "$TARGET_DIR" "$JAVA_FILE_PATH"
 
 # Check if compilation was successful
 if [ $? -eq 0 ]; then
     echo "Compilation successful!"
 
-    # If the file is part of a package, run it from the root of the package hierarchy
+    # If the file is part of a package, run it from the target directory
     if [ -n "$PACKAGE_NAME" ]; then
-        # Move to the directory containing the Java file
-        cd "$JAVA_DIR"
-
-        # Create the directory structure for the package
-        PACKAGE_DIR=$(echo "$PACKAGE_NAME" | tr '.' '/')
-        mkdir -p "$PACKAGE_DIR"
-        mv *.class "$PACKAGE_DIR/"
-
         # Run the Java program with the fully qualified class name
         echo "Running $PACKAGE_NAME.$1..."
-        java "$PACKAGE_NAME.$1"
+        java -cp "$TARGET_DIR" "$PACKAGE_NAME.$1"
     else
         # If there's no package, run the program directly
         echo "Running $1..."
-        java -cp "$JAVA_DIR" "$1"
+        java -cp "$TARGET_DIR" "$1"
     fi
 else
     echo "Compilation failed. Please check your code."

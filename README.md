@@ -34,12 +34,12 @@ This repository is a collection of various interview questions, all implemented 
 ## 📂 Folder Structure
 
 ```bash
-interview-questions/
-├── rainwater-trapping/
+TechnicalQuestions/
+├── Rainwater/
 │   ├── Solution.java
 │   └── expectedOutput.txt
 │   
-├── knapsack-problem/
+├── Knapsack/
 │   ├── Solution.java
 │   └── expectedOutput.txt
 └── ...

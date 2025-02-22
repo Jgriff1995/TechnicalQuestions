@@ -1,0 +1,26 @@
+-----------------------------------------
+Knapsack Problem Results: Small Set
+-----------------------------------------
+Dynamic Programming Solution: $107
+  - Time Complexity: O(n * W), where n = number of items, W = weight capacity
+  - Space Complexity: O(n * W)
+  - Runtime: 19400 nanoseconds
+
+Recursive Solution: $107
+  - Time Complexity: O(2^n), where n = number of items
+  - Space Complexity: O(n) for the recursion stack
+  - Runtime: 6000 nanoseconds
+-----------------------------------------
+-----------------------------------------
+Knapsack Problem Results: Very Large Set
+-----------------------------------------
+Dynamic Programming Solution: $2360
+  - Time Complexity: O(n * W), where n = number of items, W = weight capacity
+  - Space Complexity: O(n * W)
+  - Runtime: 3.529E-4 seconds
+
+Recursive Solution: $2360
+  - Time Complexity: O(2^n), where n = number of items
+  - Space Complexity: O(n) for the recursion stack
+  - Runtime: 0.0024366 seconds
+-----------------------------------------

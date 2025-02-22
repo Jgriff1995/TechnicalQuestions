@@ -90,6 +90,8 @@ This script automates the process of compiling and running Java programs. It han
 createJavaProject.sh
 This Bash script (createJavaProject.sh) automates the creation of new Java projects for solving technical questions. It sets up a folder, generates a Java file with a template, and creates an empty expectedOutput.txt file.
 
+Both scripts were tailored to a windows computer, make whatever changes necessary for them to suit your needs. Do not copy verbatim, they will not run.
+
 ---
 
 ### **Usage**
@@ -129,6 +131,7 @@ Expected Output File: /c/Users/your_name/some_directory/TechnicalQuestions/folde
 ### **Requirements**
 
 Java Development Kit (JDK): Ensure javac and java are installed and accessible in your PATH.
+git Bash for Windows (Or whatever operating system you're on)
 
 ---
 

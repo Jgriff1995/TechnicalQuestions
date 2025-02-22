@@ -1,0 +1,75 @@
+Voting Pool:
+jamie: 3 votes
+johnny: 4 votes
+john: 4 votes
+jackie: 2 votes
+
+Winner: john
+Method: Standard Array
+Runtime: 11200 nanoseconds
+
+==================================================
+
+Voting Pool:
+virat: 2 votes
+rishabh: 1 votes
+rohit: 3 votes
+
+Winner: rohit
+Method: Standard Array
+Runtime: 3100 nanoseconds
+
+==================================================
+
+Voting Pool:
+jamie: 3 votes
+johnny: 4 votes
+john: 4 votes
+jackie: 2 votes
+
+Winner: john
+Method: Hashing
+Runtime: 12900 nanoseconds
+
+==================================================
+
+Voting Pool:
+virat: 2 votes
+rishabh: 1 votes
+rohit: 3 votes
+
+Winner: rohit
+Method: Hashing
+Runtime: 8300 nanoseconds
+
+==================================================
+
+Voting Pool:
+bob: 2 votes
+alice: 2 votes
+charlie: 3 votes
+
+Winner: charlie
+Method: Hashing
+Runtime: 11200 nanoseconds
+
+==================================================
+
+Voting Pool:
+sarah: 3 votes
+
+Winner: sarah
+Method: Hashing
+Runtime: 7900 nanoseconds
+
+==================================================
+
+Voting Pool:
+frank: 1 votes
+dave: 1 votes
+emma: 1 votes
+grace: 1 votes
+
+Winner: dave
+Method: Hashing
+Runtime: 9300 nanoseconds

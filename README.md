@@ -138,3 +138,5 @@ If the Java file is part of a package, the script will create the necessary dire
 - Special thanks to [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/) for providing great problem sets.
 
 ---
+
+[🔝 Back to Top](#-interview-questions-repository)

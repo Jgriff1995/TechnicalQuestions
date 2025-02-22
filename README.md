@@ -90,7 +90,7 @@ Contributions are welcome! If you'd like to add more problems, improve existing 
 **createJavaProject.sh**
 - This Bash script (createJavaProject.sh) automates the creation of new Java projects for solving technical questions. It handles folder creation, Java file generation, and expected output file setup. By default, the script is stored in a `createJavaProject.txt` file. Simply change the file extension from `.txt` to `.sh` to turn it into a bash script file. The script is designed to work on Windows systems using Git Bash or WSL.
 
-- Both scripts were tailored to a windows computer, make whatever changes necessary for them to suit your needs. Do not copy verbatim, they will not run.
+- Both scripts were tailored to a windows computer, make whatever changes necessary for them to suit your needs. **Do not copy verbatim, they will not run**.
 
 ---
 
@@ -158,9 +158,9 @@ export PATH=$PATH:/usr/local/bin
 
 The run script assumes the Java file is located in the current directory or its subdirectories.
 If the Java file is part of a package, the script will create the necessary directory structure and run the program with the fully qualified class name.
-The .gitignore file will ignore the directory nested inside /Problem_Name/target/problemSolution.class. Class files are not uploaded.
+The `.gitignore` file will ignore the directory nested inside` /Problem_Name/target/problemSolution.class`. Class files are not uploaded.
 
-The run script assumes you are currently in the Root Folder /TechnicalQuestions
+Both scripts assumes you are currently in the Root Folder `./TechnicalQuestions`
 
 ---
 

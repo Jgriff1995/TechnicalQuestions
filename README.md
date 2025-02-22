@@ -83,14 +83,14 @@ Contributions are welcome! If you'd like to add more problems, improve existing 
 
 ## ☕ **runJava.sh/createJavaProject.sh** - Bash Scripts to create,compile, and run Java programs
 
-runJava.sh:
+**runJava.sh:**
 
-This script automates the process of compiling and running Java programs. It handles packages and works from any directory. By default, the script is stored in a `runJava.txt` file. Simply change the file extension from `.txt` to `.sh` to use it. The script can be run either globally or from the root folder.
+ - This script automates the process of compiling and running Java programs. It handles packages and works from any directory. By default, the script is stored in a `runJava.txt` file. Simply change the file      extension from `.txt` to `.sh` to turn it into a bash script file. The script can be run either globally or from the root folder.
 
-createJavaProject.sh
-This Bash script (createJavaProject.sh) automates the creation of new Java projects for solving technical questions. It sets up a folder, generates a Java file with a template, and creates an empty expectedOutput.txt file.
+**createJavaProject.sh**
+- This Bash script (createJavaProject.sh) automates the creation of new Java projects for solving technical questions. It handles folder creation, Java file generation, and expected output file setup. By default, the script is stored in a `createJavaProject.txt` file. Simply change the file extension from `.txt` to `.sh` to turn it into a bash script file. The script is designed to work on Windows systems using Git Bash or WSL.
 
-Both scripts were tailored to a windows computer, make whatever changes necessary for them to suit your needs. Do not copy verbatim, they will not run.
+- Both scripts were tailored to a windows computer, make whatever changes necessary for them to suit your needs. Do not copy verbatim, they will not run.
 
 ---
 
@@ -130,8 +130,8 @@ Expected Output File: /c/Users/your_name/some_directory/TechnicalQuestions/folde
 
 ### **Requirements**
 
-Java Development Kit (JDK): Ensure javac and java are installed and accessible in your PATH.
-git Bash for Windows (Or whatever operating system you're on)
+- Java Development Kit (JDK): Ensure javac and java are installed and accessible in your PATH.
+- git Bash for Windows (Or whatever operating system you're on)
 
 ---
 

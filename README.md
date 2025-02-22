@@ -130,6 +130,8 @@ The script assumes the Java file is located in the current directory or its subd
 
 If the Java file is part of a package, the script will create the necessary directory structure and run the program with the fully qualified class name.
 
+The .gitignore file will ignore the directory nested inside /Problem_Name/target/problemSolution.class. Class files are not uploaded.
+
 ---
 
 ## 🙏 Acknowledgments
